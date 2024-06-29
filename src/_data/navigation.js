@@ -6,19 +6,19 @@ export default {
     },
     {
       text: 'Eventos',
-      url: '/eventos'
+      url: '/eventos/index.html'
     },
     {
       text: 'Glossário da TI',
-      url: '/get-started/'
+      url: '/get-started/index.html'
     },
     {
       text: 'Blog',
-      url: '/blog/'
+      url: '/blog/index.html'
     },
     {
       text: 'Sobre',
-      url: '/about/'
+      url: '/about/index.html'
     },
   ],
   bottom: [
