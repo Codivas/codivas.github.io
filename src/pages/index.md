@@ -1,51 +1,38 @@
 ---
 permalink: /index.html
 title: 'Coletivo Codivas'
-description: 'Eleventy starter using modern CSS, fluid type, fluid spacing, flexible layout and progressive enhancement.'
+description: 'Somos uma comunidade dedicada a empoderar mulheres no campo da tecnologia. '
 layout: 'blog'
 blog:
   title: 'Blog'
-  intro: "I'm showing the last 4 blog posts, but there might be more!"
+  intro: "Somos uma comunidade dedicada a empoderar mulheres no campo da tecnologia. "
 ---
 
 ## Inicio
 
-Built around a CSS workflow that emphasizes guiding browser styling rather than micromanaging it. It incorporates progressive enhancement, fluid type and spacing, and utilizes modern CSS features for layout. The goal is to develop frontends that provide a great experience across all devices, connection speeds, and usage contexts.
+Somos uma comunidade dedicada a empoderar mulheres no campo da tecnologia. Através de um grupo vibrante no WhatsApp, participamos de eventos inspiradores e organizamos atividades que promovem o crescimento profissional e pessoal de nossas membros. Nosso objetivo é criar um espaço seguro e inclusivo onde mulheres podem compartilhar conhecimentos, buscar suporte mútuo e ampliar suas oportunidades na área de TI.
 
-**This is version 3.**
-I keep a [branch of v1](https://github.com/madrilene/eleventy-excellent/tree/v1) and [v2](https://github.com/madrilene/eleventy-excellent/tree/v2) because I have changed a lot of things.
-I have tried to [document](/get-started/#docs-lol) most features and methodologies.
+Junte-se a nós para conectar, aprender e avançar juntas no mundo da tecnologia!
 
-**Have fun** and let me know if you find any issues or have ideas for improvements!
+## SubsGrupos
 
-
-## Grupos de estudos
-
-Built around a CSS workflow that emphasizes guiding browser styling rather than micromanaging it. It incorporates progressive enhancement, fluid type and spacing, and utilizes modern CSS features for layout. The goal is to develop frontends that provide a great experience across all devices, connection speeds, and usage contexts.
-
-**This is version 3.**
-I keep a [branch of v1](https://github.com/madrilene/eleventy-excellent/tree/v1) and [v2](https://github.com/madrilene/eleventy-excellent/tree/v2) because I have changed a lot of things.
-I have tried to [document](/get-started/#docs-lol) most features and methodologies.
-
-**Have fun** and let me know if you find any issues or have ideas for improvements!
+colocar os subgrupo do whatapps
 
 
-## Valores - Participações etc
+## Nossos Valores:
 
-Built around a CSS workflow that emphasizes guiding browser styling rather than micromanaging it. It incorporates progressive enhancement, fluid type and spacing, and utilizes modern CSS features for layout. The goal is to develop frontends that provide a great experience across all devices, connection speeds, and usage contexts.
+- **Inclusão:** Criamos um espaço seguro e acolhedor para todas as mulheres.
+- **Colaboração:** Acreditamos na força do trabalho conjunto e no suporte mútuo.
+- **Educação:** Promovemos o aprendizado contínuo e o desenvolvimento de habilidades.
+- **Inovação:** Encorajamos a criatividade e a adoção de novas tecnologias.
 
-**This is version 3.**
-I keep a [branch of v1](https://github.com/madrilene/eleventy-excellent/tree/v1) and [v2](https://github.com/madrilene/eleventy-excellent/tree/v2) because I have changed a lot of things.
-I have tried to [document](/get-started/#docs-lol) most features and methodologies.
-
-**Have fun** and let me know if you find any issues or have ideas for improvements!
 
 ## Como Participar
 
-Built around a CSS workflow that emphasizes guiding browser styling rather than micromanaging it. It incorporates progressive enhancement, fluid type and spacing, and utilizes modern CSS features for layout. The goal is to develop frontends that provide a great experience across all devices, connection speeds, and usage contexts.
+Para se tornar parte do Coletivo Codivas, basta se inscrever através do nosso link de inscrição. Este é o único meio de entrada para garantir um processo organizado e acolhedor para todas.
 
-**This is version 3.**
-I keep a [branch of v1](https://github.com/madrilene/eleventy-excellent/tree/v1) and [v2](https://github.com/madrilene/eleventy-excellent/tree/v2) because I have changed a lot of things.
-I have tried to [document](/get-started/#docs-lol) most features and methodologies.
+Nosso objetivo é criar um espaço onde mulheres possam compartilhar conhecimentos, buscar suporte mútuo e ampliar suas oportunidades na área de TI. Junte-se a nós para conectar, aprender e avançar juntas no mundo da tecnologia!
 
-**Have fun** and let me know if you find any issues or have ideas for improvements!
+
+[Inscrever aqui](https://google.com)
+
