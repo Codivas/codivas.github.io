@@ -16,7 +16,7 @@ jobs:
     - name: Setup Node.js
       uses: actions/setup-node@v2
       with:
-        node-version: '18'  # Ajustado para Node.js 18
+        node-version: '18'  # Usar Node.js 18 conforme necessário
 
     - name: Install dependencies
       run: npm install
@@ -28,6 +28,10 @@ jobs:
       run: |
         git config --global user.name 'github-actions[bot]'
         git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-        git add .
-        git commit -m 'Deploy 11ty site'
-        git push
+        git clone --branch gh-pages https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git gh-pages
+        rm -rf gh-pages/*
+        cp -r _site/* gh-pages/
+        cd gh-pages
+        git add --all
+        git commit -m "Deploy to GitHub Pages"
+        git push origin gh-pages
