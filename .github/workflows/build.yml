@@ -12,19 +12,20 @@ jobs:
     steps:
     - name: Checkout repository
       uses: actions/checkout@v2
-   
+      
     - name: Setup Node.js
       uses: actions/setup-node@v2
       with:
-        node-version: '18'  # ajuste para a versão do Node.js que você está usando
-     
+        node-version: '18'  # atualizado para a versão 18
+        
     - name: Install dependencies
       run: npm install
-   
+      
     - name: Build site with 11ty
       run: npx @11ty/eleventy
-   
-    - name: Deploy to GitHub Pages  # ajuste se desejar deployar para outro lugar
+      
+    - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
       with:
-        deploy_key: ${{ secrets.ACCESS_TOKEN }}  # ajuste para o token de acesso
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./_site  # ajuste de acordo com o diretório de saída do 11ty
