@@ -2,29 +2,29 @@ export default {
   top: [
     {
       text: 'Home',
-      url: '/'
+      url: './'
     },
     {
       text: 'Eventos',
-      url: '/eventos'
+      url: './eventos'
     },
     {
       text: 'Glossário da TI',
-      url: '/get-started/'
+      url: './get-started/'
     },
     {
       text: 'Blog',
-      url: '/blog/'
+      url: './blog/'
     },
     {
       text: 'Sobre',
-      url: '/about/'
+      url: './about/'
     },
   ],
   bottom: [
     {
       text: 'Código de Conduta',
-      url: '/codigo-de-conduta/'
+      url: './codigo-de-conduta/'
     },
     // {
     //   text: 'Privacidade',
