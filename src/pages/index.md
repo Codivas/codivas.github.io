@@ -1,7 +1,7 @@
 ---
 permalink: /index.html
 title: 'Coletivo Codivas'
-description: 'Somos uma comunidade dedicada a empoderar mulheres no campo da tecnologia. '
+description: 'Somos uma comunidade dedicada a empoderar mulheres no campo da tecnologia.'
 layout: 'blog'
 blog:
   title: 'Blog'

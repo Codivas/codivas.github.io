@@ -1,23 +1,23 @@
 export const url = process.env.URL || 'http://localhost:8080';
 export const siteName = 'Codivas';
-export const siteDescription = 'Eleventy starter for building modern, resilient websites';
+export const siteDescription = 'Somos uma comunidade dedicada a empoderar mulheres no campo da tecnologia.';
 export const siteType = 'Person'; // schema
-export const locale = 'en_EN';
-export const lang = 'en';
+export const locale = 'pt_BR';
+export const lang = 'pt';
 export const skipContent = 'Skip to content';
 export const author = {
-  name: 'Lene Saile', // i.e. Lene Saile - page / blog author's name. Must be set.
-  avatar: '/icon-512x512.png', // path to the author's avatar. In this case just using a favicon.
-  email: 'hola@lenesaile.com', // i.e. hola@lenesaile.com - email of the author
-  website: 'https://www.lenesaile.com' // i.e. https.://www.lenesaile.com - the personal site of the author
+  name: 'coletivo codivas', // i.e. Lene Saile - page / blog author's name. Must be set.
+  avatar: '/l.png', // path to the author's avatar. In this case just using a favicon.
+  email: 'coletivocodivas@gmail.com', // i.e. hola@lenesaile.com - email of the author
+  website: 'https://www.codivas.com.br' // i.e. https.://www.lenesaile.com - the personal site of the author
 };
 export const creator = {
   name: 'Coletivo Codivas', // i.e. Lene Saile - creator's (developer) name.
   email: 'coletivocodivas@gmail.com',
   website: 'https://www.codivas.com.br',
-  social: 'https://front-end.social/@lene'
+  social: 'https://codivas.com.br/social'
 };
-export const pathToSvgLogo = 'src/assets/svg/misc/logo.svg'; // used for favicon generation
+export const pathToSvgLogo = 'src/assets/images/logo.jpg'; // used for favicon generation
 export const themeColor = '#DD4462'; //  Manifest: defines the default theme color for the application
 export const themeBgColor = '#FBFBFB'; // Manifest: defines a placeholder background color for the application page to display before its stylesheet is loaded
 export const opengraph_default = '/assets/images/template/opengraph-default.jpg'; // fallback/default meta image
