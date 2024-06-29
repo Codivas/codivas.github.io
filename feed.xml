@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:base="http://localhost:8080/">
+  <title>My Web Development Blog</title>
+  <subtitle>Tell the word what you are writing about in your blog. It will show up on feed readers.</subtitle>
+  <link href="http://localhost:8080/feed.xml" rel="self" />
+  <link href="http://localhost:8080/" />
+  
+  <updated>2024-06-28T00:00:00Z</updated>
+  <id>http://localhost:8080/</id>
+  <author>
+    <name>Lene Saile</name>
+    <email>hola@lenesaile.com</email>
+  </author><entry>
+      <title>Palco Comunidade CPBR 16</title>
+      <link href="http://localhost:8080/blog/palco-comunidade-cpbr-16/" />
+      <updated>2024-06-28T00:00:00Z</updated>
+      <id>http://localhost:8080/blog/palco-comunidade-cpbr-16/</id>
+      <content xml:lang="en_EN" type="html">
+				
+ 			</content>
+    </entry><entry>
+      <title>Codivas na CP Amazonas</title>
+      <link href="http://localhost:8080/blog/codivas-na-cp-amazonas/" />
+      <updated>2024-06-28T00:00:00Z</updated>
+      <id>http://localhost:8080/blog/codivas-na-cp-amazonas/</id>
+      <content xml:lang="en_EN" type="html">
+				
+ 			</content>
+    </entry></feed>
