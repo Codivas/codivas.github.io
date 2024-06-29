@@ -2,6 +2,6 @@
 /* TEAM */ Developer: Coletivo Codivas Contact: coletivocodivas@gmail.com Site:
 https://www.codivas.com.br
 
-  Find me on: https://front-end.social/@lene
+  Find me on: https://codivas.com.br/social
 
 /* SITE */ Doctype: HTML5
