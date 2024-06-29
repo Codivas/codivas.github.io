@@ -1,9 +1,9 @@
-name: Build 11ty Site
+name: Build and Deploy 11ty Site
 
 on:
   push:
     branches:
-      - main  # ajuste de acordo com o nome da sua branch principal
+      - main  # Ajuste conforme necessário
 
 jobs:
   build:
@@ -12,20 +12,22 @@ jobs:
     steps:
     - name: Checkout repository
       uses: actions/checkout@v2
-      
+
     - name: Setup Node.js
       uses: actions/setup-node@v2
       with:
-        node-version: '18'  # atualizado para a versão 18
-        
+        node-version: '18'  # Ajustado para Node.js 18
+
     - name: Install dependencies
       run: npm install
-      
+
     - name: Build site with 11ty
       run: npx @11ty/eleventy
-      
+
     - name: Deploy to GitHub Pages
-      uses: peaceiris/actions-gh-pages@v3
-      with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./_site  # ajuste de acordo com o diretório de saída do 11ty
+      run: |
+        git config --global user.name 'github-actions[bot]'
+        git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+        git add .
+        git commit -m 'Deploy 11ty site'
+        git push
