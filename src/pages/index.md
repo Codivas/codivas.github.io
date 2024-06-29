@@ -14,10 +14,6 @@ Somos uma comunidade dedicada a empoderar mulheres no campo da tecnologia. Atrav
 
 Junte-se a nós para conectar, aprender e avançar juntas no mundo da tecnologia!
 
-## SubsGrupos
-
-colocar os subgrupo do whatapps
-
 
 ## Nossos Valores:
 
