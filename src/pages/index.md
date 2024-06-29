@@ -34,5 +34,5 @@ Para se tornar parte do Coletivo Codivas, basta se inscrever através do nosso l
 Nosso objetivo é criar um espaço onde mulheres possam compartilhar conhecimentos, buscar suporte mútuo e ampliar suas oportunidades na área de TI. Junte-se a nós para conectar, aprender e avançar juntas no mundo da tecnologia!
 
 
-[Inscrever aqui](https://google.com)
+[Inscrever aqui](https://docs.google.com/forms/d/e/1FAIpQLSeqT5pnviIC0pYfQIQVAz70ANdfmdLiMSu5AKdeI594dDt37w/alreadyresponded)
 
