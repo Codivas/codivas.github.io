@@ -12,9 +12,9 @@ export const author = {
   website: 'https://www.lenesaile.com' // i.e. https.://www.lenesaile.com - the personal site of the author
 };
 export const creator = {
-  name: 'Lene Saile', // i.e. Lene Saile - creator's (developer) name.
-  email: 'hola@lenesaile.com',
-  website: 'https://www.lenesaile.com',
+  name: 'Coletivo Codivas', // i.e. Lene Saile - creator's (developer) name.
+  email: 'coletivocodivas@gmail.com',
+  website: 'https://www.codivas.com.br',
   social: 'https://front-end.social/@lene'
 };
 export const pathToSvgLogo = 'src/assets/svg/misc/logo.svg'; // used for favicon generation
