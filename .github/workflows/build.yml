@@ -31,8 +31,7 @@ jobs:
         git clone --branch gh-pages https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git gh-pages
         rm -rf gh-pages/*
         cp -r dist/* gh-pages/
-        # Preserve the CNAME file
-        if [ -f .CNAME ]; then cp .CNAME gh-pages/; fi
+        echo "codivas.com.br" > gh-pages/CNAME
         cd gh-pages
         git add --all
         git commit -m "Deploy to GitHub Pages"
