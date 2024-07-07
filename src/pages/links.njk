@@ -18,10 +18,9 @@ blog:
     {% for key, value in personal.platforms %}
       {% if value != "" %}
         <!-- regular platforms --> 
-        <div style=" padding: 1rem 0">{% svg 'platform/' + key %}
-        <a href="{{ value }}" rel="me" style=" padding: 1rem 0">
-         
-          {{key}}
+        <div style=" padding: 1rem 0; text-transform: capitalize;">{% svg 'platform/' + key %}
+        <a href="{{ value }}" rel="me" style=" padding: 1rem 0;">
+         {{key}}
         </a>
         </div>
       {% endif %}
@@ -29,7 +28,7 @@ blog:
 
     <a href="http://codivas.com.br" rel="me" style=" padding: 1rem 0">
               
-        site 
+        Site 
       </a>
           <a href="http://codivas.com.br/blog/palco-comunidade-cpbr-16/" rel="me" style=" padding: 1rem 0">
               
