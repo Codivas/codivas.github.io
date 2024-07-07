@@ -1,0 +1,33 @@
+---
+permalink: /links.html
+title: 'Links'
+description: 'Somos uma comunidade dedicada a empoderar mulheres no campo da tecnologia.'
+layout: 'page-link'
+blog:
+  title: 'Links'
+  intro: 'Somos uma comunidade dedicada a empoderar mulheres no campo da tecnologia. '
+---
+
+<div style="display: flex; flex-direction: column; align-items: center">
+  <img src="/assets/images/logo.svg" alt="{{ meta.siteName }}" loading="lazy" width="300px" style=" padding: 1rem 0"/>
+  <img src="/assets/images/logo-title.svg" alt="{{ meta.siteName }}" loading="lazy" width="300px" style=" padding: 1rem 0" />
+
+  <nav class="" aria-label="{{ meta.navigation.ariaPlatforms }}" style="display: flex;flex-direction: column; padding: 1rem 0 ">
+
+
+    {% for key, value in personal.platforms %}
+      {% if value != "" %}
+        <!-- regular platforms -->
+        <a href="{{ value }}" rel="me" style=" padding: 1rem 0">
+          {% svg 'platform/' + key %}
+          {{ key  }}
+        </a>
+      {% endif %}
+    {% endfor %}
+
+    <a href="http://codivas.com.br" rel="me" style=" padding: 1rem 0">
+              
+        site 
+      </a>
+  </nav>
+</div>

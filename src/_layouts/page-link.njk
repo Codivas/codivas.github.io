@@ -1,0 +1,131 @@
+{% set assetHash = helpers.random() %}
+
+<!doctype html>
+<html lang="{{ meta.lang }}">
+  <!-- The order of elements in the head follows recommendations by Harry Roberts. learn more here: https://www.youtube.com/watch?v=MHyAOZ45vnU -->
+
+  <head>
+    <!-- 1 charset/viewport -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- 2 title -->
+    <title>
+      {%- if discover.title -%}
+        {{- discover.title -}}
+      {%- elif title -%}
+        {{- title -}}
+      {%- else -%}
+        {{- meta.siteName -}}
+      {%- endif -%}
+    </title>
+
+     <base href="{{ page.url }}" />
+
+    <!-- 3 synchronous js  -->
+    {% include "head/js-inline.njk" %}
+
+    <!-- 4 schema settings -->
+    {% include "head/schema.njk" %}
+
+    <!-- 5 CSS  -->
+    <!-- <link rel="stylesheet" href="/assets/css/global.css?{{ assetHash }}" /> -->
+    {% include "head/css-inline.njk" %}
+
+    <!-- 6 preloads  -->
+    {% include "head/preloads.njk" %}
+
+    <!-- 7 meta tags, icons, open graph etc.  -->
+    {% include "head/meta-info.njk" %}
+
+    <!-- 8 defer  -->
+    {% include "head/js-defer.njk" %}
+  </head>
+
+  <body class="{{ layout }}">
+
+<article class="wrapper">
+  
+       <!-- theme switch -->
+    {% include 'partials/theme-switch.njk' %}
+
+  <div class="region flow prose" style="--region-space-top: var(--space-xl-2xl)">{{ content | safe }}</div>
+
+  <custom-masonry layout="50-50">
+    {% for item in pagination.items %}
+      {% set definedDate = item.date %}
+
+      <custom-card clickable>
+        <h2 slot="headline">
+          <a href="{{ item.url | url }}">{{ item.data.title }}</a>
+        </h2>
+       
+        {%
+          if
+          item.data.tags.length > 1
+        %}
+          <div slot="tag" webc:nokeep>
+            {% for tag in item.data.tags %}
+              {% if tag != "posts" %}
+                <span class="button post-tag">{{ tag }}</span>
+              {% endif %}
+            {% endfor %}
+          </div>
+        {% endif %}
+        <div slot="content" webc:nokeep>{{ item.data.description | markdownFormat | safe }}</div>
+      </custom-card>
+    {% endfor %}
+  </custom-masonry>
+
+  <!-- set collection to paginate -->
+  {% set collectionToPaginate = collections.posts %}
+  <!-- set target pagination settings in meta.js -->
+  {% set metaKey = "blog" %}
+  <!-- if the number of items in the collection is greater than the number of items shown on one page -->
+  {% if collectionToPaginate.length > pagination.size %}
+    <!-- include pagination -->
+    {% include 'partials/pagination.njk' %}
+  {% endif %}
+</article>
+
+
+<footer class="site-footer ">
+  <div class="wrapper">
+    <div class="footer__meta | cluster">
+      <nav class="footer__meta | cluster text-step-0" aria-label="{{ meta.navigation.ariaBottom }}">
+        &copy; {% year %}
+        <a href="/" {% if page.url == "/" %}aria-current="page"{% endif %}
+          ><span class="font-display">{{ meta.siteName }}</span> <small>{{ pkg.version }}</small>
+        </a>
+
+        {% for item in navigation.bottom %}
+          <a
+            href="{{ item.url }}"
+            {{
+              helpers.getLinkActiveState(item.url,
+              page.url)
+              |
+              safe
+            }}
+            >{{ item.text }}</a
+          >
+        {% endfor %}
+      </nav>
+    </div>
+
+
+
+    <aside class="creator">
+      <a class="cluster" href="{{ meta.creator.website }}"
+        >Made with <span class="visually-hidden">love</span> <span>{% svg "misc/heart" %}</span> by
+        {{ meta.creator.name }}</a
+      >
+    </aside>
+  </div>
+</footer>
+
+
+    <script type="module" src="/assets/scripts/components/custom-easteregg.js"></script>
+    <custom-easteregg></custom-easteregg>
+  </body>
+</html>
