@@ -17,11 +17,13 @@ blog:
 
     {% for key, value in personal.platforms %}
       {% if value != "" %}
-        <!-- regular platforms -->
+        <!-- regular platforms --> 
+        <div style=" padding: 1rem 0">{% svg 'platform/' + key %}
         <a href="{{ value }}" rel="me" style=" padding: 1rem 0">
-          {% svg 'platform/' + key %}
-          {{ key  }}
+         
+          {{key}}
         </a>
+        </div>
       {% endif %}
     {% endfor %}
 
